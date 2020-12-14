@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+    
+    <link rel='stylesheet' href='css/style.css'>
+
+    <title>Homework 5 innovative-vis </title>
+  </head>
+  
+  <body background="imgs/space.png" >
+
+  <h1 id="title"> Soviet Space Dogs Flight Fate Analysis By Gender </h1>
+
+  <div class="intro">
+  <img src="imgs/dog.png" width=40% height=40% id="dogcenter">
+  <p id='first'> In the 1950s and 1960s, the Soviet space program used dogs for suborbital and orbital space flights to determine whether manned spaceflight was feasible. During this period, the Soviet Union launched space shuttles with at least 57 dogs to carry passengers. There are fewer dogs in space, because some can fly more than once. Most survived; According to the parameters tested, a few deaths were mainly due to technical failures. </p>
+  <p> After EDA the datasets, I find it might be interested if we can do explore how gender factor effect the survial rate. I use python preprcosse the dataset, and summarize percentage of the Fate of MaleDogs, FemaleDogs by years. Then I visualize them as Donut Chart. I hope we can find some regularly distribution from my visualizations.</p> 
+  <p>In my visulization, the mark will be the four segments of pie as arc areas. The pie chart channels to control the appearance of marks, I also use different color domian to specify the different categories. I also add legend and tooltips for each category. When user select the different year, the space dogs flight fate by gender information will be shown in the pie chart. Moreover, when user click the pie slices, the dogs english names which responding to this category will shows.</p>
+  <p>Quantatitive attribute: temporal attribute.</p>
+  <p>Categorical attribute: gender of dogs, fate of space dog, english names of dog.</p>
+</div>
+  <p id='ly'>Choose Flight Year: </p>
+   <select class='select-css' id='year' >
+        <option value='1951'>1951</option>
+        <option value='1954'>1954</option>
+        <option value='1955'>1955</option>
+        <option value='1956'>1956</option>
+        <option value='1957'>1957</option>
+        <option value='1958'>1958</option>
+        <option value='1959'>1959</option>
+        <option value='1960'>1960</option>
+        <option value='1961'>1961</option>
+        <option value='1966'>1966</option>
+      </select>
+    <div id="center"> 
+    </div>
+
+    <div id=ref>
+      <p id='ref'>The transitions effect in visualization is inspired by http://bl.ocks.org/dbuezas/9572040. Based on this, I add legend rectangle and text in the central of donut. Moreover, I make the mousemove effect, when user move on the slice of pie chart, the dogs' names and special information will shows as a tooltip. I also use a select drop down button to control the visulization. Beyond the visulization, I design the color for categorical attribute, for example, the MaleDog category color is close to blue(include survived and died), the FemaleDog category color is close to red(include survived and died). Furthemore, I change the attribute feature in style.css to make the style match the visulization topic since I use the dark color image as background. Some detail features like tranisiton delay, opacity or tooltip border can be found if user spend time to explort the visulization!</p> 
+    </div>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src='script/index.js'></script>
+  </body>
+<!-- <script src='script/index.js'></script> -->
+<!--   <script src="https://d3js.org/d3.v3.min.js"></script>
+ <script src='script/index.js'></script> -->
+    <!--
+        The script is lilned after the body 
+        because the code inside index.js immediately runs. 
+    -->
+  
+</html>

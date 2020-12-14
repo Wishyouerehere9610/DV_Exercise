@@ -1,0 +1,75 @@
+#wrapper {
+  margin:auto;
+  width:1440px;
+}
+input {
+  width:50px;
+}
+svg {
+  border:1px solid gray;
+  border-radius:10px;
+  height:600px;
+  width:600px;
+  margin:5px;
+}
+#linechart {
+  width:800px;
+}
+
+html {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.countrymap {
+  stroke: black;
+}
+
+
+h2, h3 {
+  text-align:center;
+}
+
+.x-axis line, .x-axis path { 
+  stroke: grey; 
+}
+
+div.tooltip-donut {
+     position: absolute;
+     text-align: center;
+     padding: .5rem;
+     background: #FFFFFF;
+     color: #313639;
+     border: 1px solid #313639;
+     border-radius: 8px;
+     pointer-events: none;
+     font-size: 1.3rem;
+}
+.mo{
+  stroke-width: 4px;
+}
+.out{
+  stroke-width: 1px
+}
+
+.line{
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.xaxis{
+  stroke:grey;
+  font-size: 14;
+}
+
+.tick{
+  fill:grey;
+}
+
+
+.yaxis{
+text-anchor: end;
+}
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel='stylesheet' href='style.css'>
+    <title>Homework 6 Argumentative Vis</title>
+  </head>
+  <h1 style="text-align:center; color:#802b00;">Analysis of Survival Factor in Tintanic Incident</h2>
+    <div class='intro'>
+        <img src="images/titanic.jpg" style=" display: block;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                max-width:90%;
+                                                max-height:90%;" />
+    <p>The Sinking of the RMS Titanic is the most famous ship disaster in the North Atlantic between the night of April 14 and the early morning of April 15, 1912, 
+        five days after its maiden voyage from Southampton, England, to New York Harbor, the world's largest cruise ship at the time. At 2340 hours on Sunday, 14 April 1912, 
+        six sea ice warnings had been received before the collision with an iceberg, 
+        but the ship was approaching its maximum speed when the lookout spotted it. Unable to turn quickly, 
+        the ship suffered an impact on its starboard side, causing a gap in parts of the hull and flooding five of its 16 watertight compartments. 
+        The Titanic was designed to withstand only four watertight compartments, and sank.s the passengers were put into the lifeboats, they used distress bombs and radiotelegrams to call for help. According to shipping industry practice at the time, the Titanic's lifeboat system was designed to "ferry" passengers to other nearby ships, rather than to "evacuate" all personnel to take refuge in lifeboats at the same time, and was therefore far from sufficient in number; With the ship sinking quickly, many passengers and crew were unable to board lifeboats hours before other vessels arrived. To make matters worse, poor evacuation management has led to many lifeboats being launched before they are fully full. Two hours and 40 minutes later, 
+        the ship sank.</p>
+        <p>
+        The Titanic dataset is provide in <a href="https://www.kaggle.com/friday20121221/titannic-train-dataset">Kaggle Dataset.</a> The dataset contains 
+        passengerId, Survived status, Pclass, Name, Sex, Age, SibSp, Parch, Ticket, Fare. Cabin,Embarked. The topic "what makes passenger survived" become
+        very controversial. <b>For the following visualizations, there are two arguments for this accident, one is that passenger whose age is between 15-50
+        have more chance to survived in the Titanic accident. Others said age is not the factor of survial rate in Titanic accident. Both of them provide 
+        the visualizations evidences to support their opinions. They focus on relationship between the number of survived/died passengers with age interval. 
+    </b> </p>
+    </div>
+
+  <body style="background-color:#f2f2f2;">
+    
+
+    <div class="left-chart" style="float: left;">
+ 
+        <!-- <p>This visualization's position is opposite of the "Died Passenger vs Age",
+            it proves the passengers whose age is between 15-50 years old has more chance to survive in Titanic accident. In this argument visualization, I use techique <b>Metonymy</b> which extracet part-whole in datasets, I write the python
+            srcripts to extract the survived passengers information separately,then for a winde range of ages attribute,
+            I catorgize, clustered the number of survived passengers in the certain age. In conclude, I filter the dataset
+            into "survided"part, then I pick age as attribute and did some calculation to get the filtered dataset,
+            I use text anoatation on the chart for both labels and tooltips, I also pick the blue color value line for
+            for survived passengers. 
+        </p> -->
+    </div>
+
+
+    <div class="right-chart" style="float: right;">
+    <!-- <p>This visualization's position is opposite the left visualization, it proves the age is not the important
+        survial factor in Titanic accident, becasue the visualization shows number of died passengers 
+        along with age ranges, we can see large number of death also along with the age range from 15-50 year old 
+        which is contradict with the left argument. In this visualization, the same technique called <b>Metonymy</b> is used,
+        I filter the data to "Died passengers" part, I extract the wide ranges age attribute  and count the number of death with certain age from the data to visualize the arugment,
+        furthermore, I use text anoatation on the chart for both labels and tooltips, I also pick the red color value line for
+        for died passengers. </p> -->
+    </div>
+    
+    <div class = "left-p" style="float: left;">
+        <p>This visualization's position is opposite of the "Died Passenger vs Age",
+            it proves the passengers whose age is between 15-50 years old has more chance to survive in Titanic accident. In this argument visualization, I use techique <b>Metonymy</b> which extracet part-whole in datasets, I write the python
+            srcripts to extract the survived passengers information separately,then for a winde range of ages attribute,
+            I catorgize, clustered the number of survived passengers in the certain age. In conclude, I filter the dataset
+            into "survided"part, then I pick age as attribute and did some calculation to get the filtered dataset,
+            I use text anoatation on the chart for both labels and tooltips, I also pick the blue color value line for
+            for survived passengers. 
+        </p>
+    </div>
+
+    <div class="right-p" style="float: right;">
+        <p>This visualization's position is opposite the left visualization, it proves the age is not the important
+            survial factor in Titanic accident, becasue the visualization shows number of died passengers 
+            along with age ranges, we can see large number of death also along with the age range from 15-50 year old 
+            which is contradict with the left argument. In this visualization, the same technique called <b>Metonymy</b> is used,
+            I filter the data to "Died passengers" part, I extract the wide ranges age attribute  and count the number of death with certain age from the data to visualize the arugment,
+            furthermore, I use text anoatation on the chart for both labels and tooltips, I also pick the red color value line for
+            for died passengers. </p>
+        </div>
+   
+  </body>
+ <script src='index.js'></script>
+    <!--
+        The script is lilned after the body 
+        because the code inside index.js immediately runs. 
+    -->
+   
+
+</html>
